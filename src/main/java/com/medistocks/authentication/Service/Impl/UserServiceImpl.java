@@ -46,8 +46,6 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private OtpService otpService;
 
-    
-
     // private Map<String, String> otpStorage = new HashMap<>();
 
     public ResponseEntity<Response> signUp(Request request) {
@@ -132,8 +130,6 @@ public class UserServiceImpl implements UserService {
                     .build());
         }
     }
-
-  
 
     @Override
     public Response forgotPassword(String email) {
